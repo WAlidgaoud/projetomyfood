@@ -1,0 +1,12 @@
+{
+  "name": "projetohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/accueil.scss ./css/accueil.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
