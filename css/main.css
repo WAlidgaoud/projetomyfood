@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Shrikhand&family=Source+Serif+Pro:wght@200;300&display=swap");
+.footer {
+  background-color: #353535;
+}
+
 @media screen and (max-width: 768px) {
   html,
-  body {
+body {
     margin: 0;
     font-family: "Roboto", sans-serif;
   }
@@ -29,25 +34,23 @@
     padding: 2rem;
     text-align: center;
     background-color: #fafafa;
-
-    .p1_titre {
-      margin: 0;
-    }
-    .p1_text {
-      font-weight: 300;
-      margin: 1.5rem 0;
-    }
-    .p1_btn {
-      border: 0;
-      padding: 0.75rem 1.5rem;
-      border-radius: 100px;
-      color: #fff;
-      background-color: #9356dc;
-      cursor: pointer;
-      box-shadow: 0.25rem 0.25rem 10px;
-    }
   }
-
+  .p1 .p1_titre {
+    margin: 0;
+  }
+  .p1 .p1_text {
+    font-weight: 300;
+    margin: 1.5rem 0;
+  }
+  .p1 .p1_btn {
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #9356dc;
+    cursor: pointer;
+    box-shadow: 0.25rem 0.25rem 10px;
+  }
   /*partie choix*/
   .contenu {
     max-width: 1280px;
@@ -57,11 +60,9 @@
   .choix {
     padding: 2rem;
   }
-
   .choix_title {
     margin-top: 0;
   }
-
   .choix_steps {
     margin: 0;
     padding: 0;
@@ -127,3 +128,5 @@
     background-color: #353535;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
