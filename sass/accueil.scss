@@ -30,14 +30,14 @@
     text-align: center;
     background-color: #fafafa;
 
-    .p1_titre {
+    &_titre {
       margin: 0;
     }
-    .p1_text {
+    &_text {
       font-weight: 300;
       margin: 1.5rem 0;
     }
-    .p1_btn {
+    &_btn {
       border: 0;
       padding: 0.75rem 1.5rem;
       border-radius: 100px;
@@ -49,35 +49,31 @@
   }
 
   /*partie choix*/
-  .contenu {
-    max-width: 1280px;
-    margin: auto;
-    position: relative;
-  }
+
   .choix {
     padding: 2rem;
-  }
 
-  .choix_title {
-    margin-top: 0;
-  }
+    &_title {
+      margin-top: 0;
+    }
 
-  .choix_steps {
-    margin: 0;
-    padding: 0;
-  }
-  .choix_step {
-    padding: 1.5rem;
-    margin: 1rem 0 1rem 0.8rem;
-    box-shadow: 0.1rem 0.1rem 0.06rem black;
-    border-radius: 1.5rem;
-    background-color: #f6f6f6;
-    display: flex;
-    position: relative;
-  }
-  .choix_icon {
-    margin-right: 1rem;
-    color: #7e7e7e;
+    &_steps {
+      margin: 0;
+      padding: 0;
+    }
+    &_step {
+      padding: 1.5rem;
+      margin: 1rem 0 1rem 0.8rem;
+      box-shadow: 0.1rem 0.1rem 0.06rem black;
+      border-radius: 1.5rem;
+      background-color: #f6f6f6;
+      display: flex;
+      position: relative;
+    }
+    &_icon {
+      margin-right: 1rem;
+      color: #7e7e7e;
+    }
   }
   /*patie3 images*/
   .bloc_img {
@@ -94,34 +90,32 @@
     position: relative;
     text-decoration: none;
     color: inherit;
-  }
-  .carte_img {
-    height: 12rem;
-    width: 100%;
-    border: 0 solid transparent;
-    border-radius: 1rem 1rem 0 0;
-    box-shadow: none;
-    object-fit: cover;
-  }
-  .carte_badge {
-    background-color: #07f8bb;
-    color: #1f8267;
-    padding: 0.4rem;
-    border-radius: 0.2rem;
-    position: absolute;
-    top: 1rem;
-    right: 0.7rem;
-  }
-  .carte_footer {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-  }
-  .carte_content {
-    flex: 1;
-  }
-  .footer {
-    background-color: #353535;
+
+    &__img {
+      height: 12rem;
+      width: 100%;
+      border: 0 solid transparent;
+      border-radius: 1rem 1rem 0 0;
+      box-shadow: none;
+      object-fit: cover;
+    }
+    &__badge {
+      background-color: #07f8bb;
+      color: #1f8267;
+      padding: 0.4rem;
+      border-radius: 0.2rem;
+      position: absolute;
+      top: 1rem;
+      right: 0.7rem;
+    }
+    &__footer {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    &__content {
+      flex: 1;
+    }
   }
   .footer {
     background-color: #353535;
