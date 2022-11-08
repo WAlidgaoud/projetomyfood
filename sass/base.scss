@@ -18,7 +18,7 @@ html {
   .footer {
     background-color: #353535;
 
-    .contenu {
+    &__contenu {
       display: flex;
       flex-direction: column;
     }
