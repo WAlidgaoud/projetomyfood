@@ -7,6 +7,45 @@
     transform: scale(1);
   }
 }
+.loaderwarpp {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  position: fixed;
+  z-index: 10002;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: disappear 2s forwards;
+  animation-delay: 0s;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 body,
 html {
   margin: 0;
@@ -25,58 +64,69 @@ html {
   margin: 0;
   text-align: center;
 }
-.header .footer {
+
+.footer {
   background-color: #353535;
 }
-.header .footer__contenu {
+.footer__contenu {
   display: flex;
   flex-direction: column;
+  margin-left: 1.5rem;
 }
-.header .footer__logo {
+.footer__logo {
   color: white;
   font-family: "Shrikhand", "cursive";
   margin: 0;
   font-size: 1.2rem;
 }
-.header .footer__list {
+.footer__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.header .footer__listElt {
+.footer__listElt {
   margin: 0.5rem 0;
 }
-.header .footer__listElt:first-child {
+.footer__listElt:first-child {
   margin-top: 0;
 }
-.header .footer__listElt:last-child {
+.footer__listElt:last-child {
   margin-bottom: 0%;
 }
-.header .footer__link {
+.footer__link {
   color: white;
   text-decoration: none;
 }
-.header .footer__link:hover {
+.footer__link:hover {
   text-decoration: underline;
 }
-.header .footer__icon {
+.footer__icon {
   width: 1.2rem;
   margin-right: 0.5rem;
+}
+.footer .likfas {
+  margin-left: 1rem;
+  opacity: 0;
+}
+.footer .likfas:hover {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  background-clip: "text";
+  -webkit-text-fill-color: transparent;
+  background: linear;
+}
+.footer .likfar {
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+.footer .likfar:hover {
+  opacity: 1;
 }
 
 html,
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-}
-
-.header {
-  padding: 1rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  position: relative;
-}
-.header__logo {
-  text-align: center;
 }
 
 .taillelogo {
@@ -123,8 +173,11 @@ body {
   background-color: #686868;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   cursor: pointer;
-  transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.p1_btn:hover {
+  scale: 1;
+  transition-duration: 0.25s;
 }
 
 /*partie choix*/
@@ -231,6 +284,20 @@ body {
   object-fit: cover;
 }
 
+.btn-retour {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #000;
+}
+
 .menu {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
@@ -258,12 +325,8 @@ body {
   justify-content: center;
   cursor: pointer;
   position: relative;
-  background-color: black;
 }
-.menu__btn:hover::before {
-  opacity: 1;
-}
-.menu__btn::before {
+.menu::before {
   opacity: 0;
   transition: 0.5s;
   content: "";
@@ -346,6 +409,7 @@ body {
   padding-left: 0.5rem;
 }
 .menucart__confirmation {
+  background-color: #99e2d0;
   margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
   display: flex;
@@ -370,24 +434,48 @@ body {
 .menucart:hover .menucart__wrapIcon {
   transform: rotate(0);
 }
-.menucart wrapBtn {
+
+.wrapBtn {
   display: flex;
   text-decoration: none;
   justify-content: center;
   padding: 3rem 0;
 }
-.menucart .commandBtn {
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border-radius: 100px;
-  color: #fff;
-  background-color: #686868;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
+
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.delay-5 {
+  animation-delay: 0.5s;
+}
+
+.delay-6 {
+  animation-delay: 0.6s;
+}
+
+.delay-7 {
+  animation-delay: 0.7s;
+}
+
+.delay-8 {
+  animation-delay: 0.8s;
 }
 
 /*# sourceMappingURL=main.css.map */
