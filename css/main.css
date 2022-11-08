@@ -104,23 +104,43 @@ html {
   width: 1.2rem;
   margin-right: 0.5rem;
 }
-.footer .likfas {
-  margin-left: 1rem;
+
+.likefas {
+  margin-left: -2.25rem;
   opacity: 0;
 }
-.footer .likfas:hover {
+.likefas:hover {
   opacity: 1;
   transition: all 0.2s ease-in-out;
-  background-clip: "text";
   -webkit-text-fill-color: transparent;
-  background: linear;
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
-.footer .likfar {
+
+.likefar {
   opacity: 1;
   transition: all 0.2s ease;
 }
-.footer .likfar:hover {
-  opacity: 1;
+.likefar:hover {
+  opacity: 0;
+}
+
+.btn {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.btn:hover {
+  background-color: #f6f6f6;
+  scale: 1;
+  transition-duration: 0.25s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.51);
 }
 
 html,
@@ -162,22 +182,6 @@ body {
 .p1_text {
   font-weight: 300;
   margin: 1.5rem 0;
-}
-.p1_btn {
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border-radius: 100px;
-  color: #fff;
-  background-color: #686868;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  cursor: pointer;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-}
-.p1_btn:hover {
-  scale: 1;
-  transition-duration: 0.25s;
 }
 
 /*partie choix*/
@@ -304,6 +308,17 @@ body {
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
+  /*&::before {
+    opacity: 0;
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg);
+  }*/
 }
 .menu__header {
   padding: 1rem 2rem 0 1rem;
@@ -325,17 +340,6 @@ body {
   justify-content: center;
   cursor: pointer;
   position: relative;
-}
-.menu::before {
-  opacity: 0;
-  transition: 0.5s;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg);
 }
 
 .blocmenus {
@@ -363,6 +367,7 @@ body {
   content: "";
   width: 3rem;
   height: 0.25rem;
+  background-color: #99e2d0;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -435,7 +440,7 @@ body {
   transform: rotate(0);
 }
 
-.wrapBtn {
+.centrerBtn {
   display: flex;
   text-decoration: none;
   justify-content: center;
