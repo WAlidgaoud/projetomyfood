@@ -370,15 +370,13 @@ body {
 .menucart:hover .menucart__wrapIcon {
   transform: rotate(0);
 }
-
-wrapBtn {
+.menucart wrapBtn {
   display: flex;
   text-decoration: none;
   justify-content: center;
   padding: 3rem 0;
 }
-
-.commandBtn {
+.menucart .commandBtn {
   border: 0;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
