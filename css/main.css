@@ -50,7 +50,6 @@ body,
 html {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  scroll-behavior: smooth;
 }
 
 .header {
@@ -106,14 +105,15 @@ html {
 }
 
 .likefas {
-  margin-left: -2.25rem;
+  margin-left: -1.6rem;
   opacity: 0;
 }
 .likefas:hover {
   opacity: 1;
   transition: all 0.2s ease-in-out;
-  -webkit-text-fill-color: transparent;
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .likefar {
@@ -121,7 +121,7 @@ html {
   transition: all 0.2s ease;
 }
 .likefar:hover {
-  opacity: 0;
+  opacity: 1;
 }
 
 .btn {
@@ -308,17 +308,6 @@ body {
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
-  /*&::before {
-    opacity: 0;
-    transition: 0.5s;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(0deg);
-  }*/
 }
 .menu__header {
   padding: 1rem 2rem 0 1rem;
@@ -340,6 +329,17 @@ body {
   justify-content: center;
   cursor: pointer;
   position: relative;
+}
+.menu::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg);
 }
 
 .blocmenus {

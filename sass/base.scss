@@ -2,7 +2,6 @@ body,
 html {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  scroll-behavior: smooth;
 }
 .header {
   padding: 1rem;
@@ -64,24 +63,25 @@ html {
   }
 }
 .likefas {
-  margin-left: -2.25rem;
+  margin-left: -1.6rem;
   opacity: 0;
   &:hover {
     opacity: 1;
     transition: all 0.2s ease-in-out;
-    -webkit-text-fill-color: transparent;
     background: linear-gradient(
       0deg,
       rgba(147, 86, 220, 0.9),
       rgba(255, 121, 218, 0.9)
     );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 .likefar {
   opacity: 1;
   transition: all 0.2s ease;
   &:hover {
-    opacity: 0;
+    opacity: 1;
   }
 }
 .btn {
