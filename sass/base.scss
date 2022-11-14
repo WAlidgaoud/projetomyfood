@@ -63,8 +63,13 @@ html {
   }
 }
 .likefas {
-  margin-left: -1.6rem;
   opacity: 0;
+  &__margemenu {
+    margin-left: -1.6rem;
+  }
+  &__margeindex {
+    margin-left: -2.21rem;
+  }
   &:hover {
     opacity: 1;
     transition: all 0.2s ease-in-out;

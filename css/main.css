@@ -105,8 +105,13 @@ html {
 }
 
 .likefas {
-  margin-left: -1.6rem;
   opacity: 0;
+}
+.likefas__margemenu {
+  margin-left: -1.6rem;
+}
+.likefas__margeindex {
+  margin-left: -2.21rem;
 }
 .likefas:hover {
   opacity: 1;
