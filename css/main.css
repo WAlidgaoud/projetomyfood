@@ -208,7 +208,7 @@ body {
   position: relative;
 }
 .choix_step:hover {
-  background: #ebe7ef;
+  background: #fbeef7;
   cursor: pointer;
   transform: scale(1.05);
 }
