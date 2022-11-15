@@ -161,6 +161,12 @@ body {
   margin-right: 1rem;
 }
 
+.input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
 .adress_text {
   font-weight: 500;
 }
