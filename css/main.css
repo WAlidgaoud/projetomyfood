@@ -17,7 +17,6 @@
   align-items: center;
   justify-content: center;
   animation: disappear 2s forwards;
-  animation-delay: 0s;
 }
 
 .loader {
@@ -82,15 +81,6 @@ html {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-.footer__listElt {
-  margin: 0.5rem 0;
-}
-.footer__listElt:first-child {
-  margin-top: 0;
-}
-.footer__listElt:last-child {
-  margin-bottom: 0%;
 }
 .footer__link {
   color: white;
@@ -217,6 +207,11 @@ body {
   display: flex;
   position: relative;
 }
+.choix_step:hover {
+  background: #ebe7ef;
+  cursor: pointer;
+  transform: scale(1.05);
+}
 .choix_step::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
@@ -234,6 +229,9 @@ body {
 .choix_icon {
   margin-right: 1rem;
   color: #7e7e7e;
+}
+.choix:hover .choix_icon {
+  color: #9356dc;
 }
 
 /*patie3 images*/

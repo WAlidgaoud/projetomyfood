@@ -36,18 +36,6 @@ html {
     margin: 0;
   }
 
-  &__listElt {
-    margin: 0.5rem 0;
-
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-bottom: 0%;
-    }
-  }
-
   &__link {
     color: white;
     text-decoration: none;
@@ -77,7 +65,7 @@ html {
       rgba(147, 86, 220, 0.9),
       rgba(255, 121, 218, 0.9)
     );
-    -webkit-background-clip: text;
+  -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 }

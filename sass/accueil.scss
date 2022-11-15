@@ -50,7 +50,7 @@ body {
     padding: 0;
     list-style: none;
     counter-reset: compteListe;
-
+    
     @media (min-width: 64rem) {
       display: flex;
     }
@@ -65,6 +65,12 @@ body {
     flex: 1;
     display: flex;
     position: relative;
+    &:hover{
+      background: #ebe7ef;
+      cursor: pointer;
+      transform: scale(1.05);
+     
+    }
     &::before {
       counter-increment: compteListe 1;
       content: counter(compteListe) " ";
@@ -78,14 +84,21 @@ body {
       color: #fff;
       position: absolute;
       left: -0.75rem;
+      
+    }
+  }
+  &_icon {
+    margin-right: 1rem;
+    color: #7e7e7e;}
+    &:hover &_icon{
+      color: #9356dc;
     }
   }
 
-  &_icon {
-    margin-right: 1rem;
-    color: #7e7e7e;
-  }
-}
+    
+
+
+
 /*patie3 images*/
 .bloc_img {
   background-color: #f6f6f6;
