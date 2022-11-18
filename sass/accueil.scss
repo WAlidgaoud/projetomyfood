@@ -14,15 +14,17 @@ body {
   padding: 1.25rem 1rem;
   background-color: #f3f3f3;
   font-size: 1.2rem;
-}
-.adress_icon {
-  margin-right: 1rem;
-}
+  &_icon {
+    margin-right: 1rem;
+  }
+  
+  &_text {
+    font-weight: 500;
+  }}
 .input {border:0;outline:0; background-color: transparent;}
 
-.adress_text {
-  font-weight: 500;
-}
+
+
 /*parie 1 text et btn*/
 .p1 {
   padding: 2rem;

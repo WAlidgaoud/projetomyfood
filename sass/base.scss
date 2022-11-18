@@ -39,19 +39,17 @@ html {
   &__link {
     color: white;
     text-decoration: none;
-
+  }
     &:hover {
       text-decoration: underline;
     }
-  }
+  
 
   &__icon {
     width: 1.2rem;
-    margin-right: 0.5rem;
-  }
-}
-.postion{
-  position: relative;
+    margin-right: 0.5rem;}}
+  .postion{
+    position:relative;
 }
 .likefas {
   opacity: 0;
